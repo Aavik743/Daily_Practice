@@ -1,3 +1,8 @@
+"""
+This is simple Program to check the common characters in two given strings
+"""
+
+
 def check_common_char(str1, str2):
     list_ = []
     common_chars = set(str1) & set(str2)

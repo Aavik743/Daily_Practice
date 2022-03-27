@@ -1,3 +1,10 @@
+"""
+    This is simple Program to count the number of times a character appears in the given string,
+    and store the count in a dictionary
+
+"""
+
+
 def char_count(str):
     dict1 = {}
     for _char in str:
