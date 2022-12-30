@@ -1,0 +1,24 @@
+"""
+Problem to take input the number od students, then their names and scores. 
+Output should be the name of the second lowest score holders in alphabetical order
+
+"""
+record_list = []
+name_list = []
+score_list = []
+for _ in range(int(input(" number of students "))):
+        name = input('name ')
+        score = float(input('score '))
+        score_list.append(score)
+        # set(score_list.sort())
+        record_list.append([name, score])
+ 
+score_list = list(set(score_list))
+score_list.sort()
+
+for i in record_list:
+    if score_list[1] in i:
+        name_list.append(i[0])
+name_list.sort()
+for name in  name_list:
+    print(name)   
